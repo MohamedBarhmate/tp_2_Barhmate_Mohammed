@@ -17,8 +17,10 @@ $num_addresses = isset($_SESSION['num_addresses']) ? (int)$_SESSION['num_address
             <h3>Adresse <?php echo $i; ?></h3>
             <p>Street: <?php echo $_POST['street_'.$i]; ?></p>
             <p>Street Number: <?php echo $_POST['street_nb_'.$i]; ?></p>
+            <p>city:: <?php echo $_POST['street_'.$i]; ?></p>
+            <p>zipcode: <?php echo $_POST['street_'.$i]; ?></p>
             
-            <!-- Affichez les autres champs ici -->
+            
         <?php endfor; ?>
         <button type="submit">Confirmer</button>
     </form>
