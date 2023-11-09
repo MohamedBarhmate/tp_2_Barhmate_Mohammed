@@ -24,7 +24,7 @@ $num_addresses = isset($_SESSION['num_addresses']) ? (int)$_SESSION['num_address
             <input type="text" name="street_<?php echo $i; ?>" maxlength="20" required>
             
             <label for="street_<?php echo $i; ?>">zipcode:</label>
-            <input type="number" name="street_<?php echo $i; ?>" maxlength="6" required>
+            <input type="text" name="street_<?php echo $i; ?>" maxlength="6" required>
             
             
         <?php endfor; ?>
