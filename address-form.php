@@ -21,10 +21,10 @@ $num_addresses = isset($_SESSION['num_addresses']) ? (int)$_SESSION['num_address
             <input type="number" name="street_nb_<?php echo $i; ?>" required>
 
             <label for="street_<?php echo $i; ?>">city:</label>
-            <input type="text" name="street_<?php echo $i; ?>" maxlength="50" required>
+            <input type="text" name="street_<?php echo $i; ?>" maxlength="20" required>
             
             <label for="street_nb_<?php echo $i; ?>">zipcode:</label>
-            <input type="number" name="street_nb_<?php echo $i; ?>" maxlength="50" required>
+            <input type="number" name="street_nb_<?php echo $i; ?>" maxlength="6" required>
             
             
         <?php endfor; ?>
