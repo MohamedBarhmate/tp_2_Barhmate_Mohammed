@@ -12,7 +12,7 @@ $num_addresses = isset($_SESSION['num_addresses']) ? (int)$_SESSION['num_address
 </head>
 <body>
     <h2>Vérification des Adresses</h2>
-    <form action="save-to-db.php" method="post">
+    <form action="traitementBD.php" method="post">
         <?php for ($i = 1; $i <= $num_addresses; $i++): ?>
             <h3>Adresse <?php echo $i; ?></h3>
             <p>Street: <?php echo $_POST['street_'.$i]; ?></p>
