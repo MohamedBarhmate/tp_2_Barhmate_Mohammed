@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $db_host = 'localhost';
     $db_user = 'root';
     $db_password = '';
-    $db_name = 'tp_2_Barhmate_Mohammed';
+    $db_name = 'ecom1_tp2';
 
     $conn = new mysqli($db_host, $db_user, $db_password, $db_name);
 
@@ -19,6 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Boucle à travers les adresses postées et insère les données dans la base de données
     $num_addresses = isset($_SESSION['num_addresses']) ? (int)$_SESSION['num_addresses'] : 0;
 
+    var_dump($_SESSION);
     for ($i = 1; $i <= $num_addresses; $i++) {
         $street = $_POST['street_' . $i];
         $street_nb = $_POST['street_nb_' . $i];
