@@ -5,7 +5,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($num_addresses > 0) {
         session_start();
         $_SESSION['num_addresses'] = $num_addresses;
-        
         header('Location: address-form.php');
         exit;
     }
