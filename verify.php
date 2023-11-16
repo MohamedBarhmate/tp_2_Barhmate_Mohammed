@@ -1,6 +1,8 @@
 <?php
 session_start();
 $num_addresses = isset($_SESSION['num_addresses']) ? (int)$_SESSION['num_addresses'] : 0;
+$_SESSION['address_form'] = $_POST;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
